@@ -16,7 +16,7 @@ app.post('/users', async (req, res) => {
       req.body.password, 10)
       //console.log(salt)
       //console.log(hashedPassword)
-      const user = {name: req.body.name, password:
+      const user = {username: req.body.username, password:
         hashedPassword}
         users.push(user)
         res.status(201).send()
@@ -27,7 +27,7 @@ app.post('/users', async (req, res) => {
 })
 
 app.post('/users/login', async (req, res) => {
-const user = users.find(user => user.name === req.body.name)
+const user = users.find(user => user.username === req.body.username)
   if(user == null){
     return res.status(400).send('Cannot find user')
   }
