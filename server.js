@@ -37,7 +37,7 @@ const user = users.find(user => user.username === req.body.username)
       if(await bcrypt.compare(req.body.password, user.password)){
         res.send('Success')
     } else{
-      res.send('Wrong username or password')
+      res.send('Wrong username or password') 
     }
 }
     catch{
