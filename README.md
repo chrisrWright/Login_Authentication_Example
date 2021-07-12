@@ -8,6 +8,6 @@ This image shows that a user has been created
 This image shows that when the password is stored, it is encrypted
 ![Encrypted](https://github.com/chrisrWright/Login_Authentication_Example/blob/master/images/encryptedpassword.png)
 
-This image shows
+This image shows a successful login 
 ![Login](https://github.com/chrisrWright/Login_Authentication_Example/blob/master/images/login.png)
 
